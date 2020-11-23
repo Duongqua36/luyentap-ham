@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x,y;  // luu hai canh cua hcn
+    function main(){
+        nhapCanh()  // nhap cac canh
+        let cv = chuvi() // tinh ch vi hcn
+        document.write("chu vi hinh chu nhat la:" + cv + "<br>");
+        let dt = dientich(); // tinh dien tich hinh chu nhat
+        document.write("dien tich hinh chu nhat la:" + dt + "<br>");
+        let dc = duongcheo(); // tinh duong cheo hinh chu nhat
+        document.write("duong cheo hinh chu nhat la:" + dc + "<br>");
+
+    }
+
+    function nhapCanh(){
+        x= parseFloat(prompt("nhap chhieu dai"))
+        y= parseFloat(prompt("nhap chieu rong"))
+    }
+    function chuvi(){
+        return 2*(x+y);
+    }
+    function dientich() {
+        return x * y;
+    }
+    function duongcheo(){
+    return Math.sqrt(x*x + y*y);
+    }
+    main();
+
+</script>
+</body>
+</html>
